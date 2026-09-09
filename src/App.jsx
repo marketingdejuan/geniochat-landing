@@ -128,16 +128,28 @@ function App() {
         </div>
       </div>
 
-      {/* FOOTER */}
+      {/* FOOTER - ACTUALIZADO CON POLÍTICA DE PRIVACIDAD */}
       <footer className="bg-white border-t border-slate-200 py-12">
-        <div className="max-w-7xl mx-auto px-4 text-center">
+        <div className="max-w-7xl mx-auto px-4 text-center flex flex-col items-center">
           <div className="flex items-center justify-center gap-2 mb-4">
             <div className="bg-emerald-500 p-1.5 rounded-lg">
               <ShoppingCart size={16} className="text-white" />
             </div>
             <span className="font-bold text-lg text-slate-800">Geniochat</span>
           </div>
-          <p className="text-slate-500 text-sm">© 2026 Geniochat. No estamos afiliados a WhatsApp Inc.</p>
+          
+          <p className="text-slate-500 text-sm mb-4">
+            © 2026 Geniochat. No estamos afiliados a WhatsApp LLC ni a Meta Platforms, Inc.
+          </p>
+          
+          <div className="mt-2">
+            <a 
+              href="/privacidad.html" 
+              className="text-emerald-600 hover:text-emerald-700 text-sm font-medium underline underline-offset-4 transition-colors"
+            >
+              Política de Privacidad
+            </a>
+          </div>
         </div>
       </footer>
 
