@@ -2,12 +2,12 @@ import React from 'react';
 import { 
   Download, CheckCircle2, Shield, LayoutDashboard, MessageSquare, 
   Users, Star, ShoppingCart, Bot, Truck, Clock, Zap, Megaphone, 
-  CalendarDays, ArrowRight 
+  CalendarDays, ArrowRight, MessageCircle 
 } from 'lucide-react';
 
 function App() {
   return (
-    <div className="min-h-screen bg-slate-50 font-sans text-slate-900">
+    <div className="min-h-screen bg-slate-50 font-sans text-slate-900 relative">
       
       {/* NAVEGACIÓN */}
       <nav className="fixed w-full bg-white/80 backdrop-blur-md z-50 border-b border-slate-200">
@@ -270,6 +270,20 @@ function App() {
           </div>
         </div>
       </footer>
+
+      {/* 🚀 BOTÓN FLOTANTE DE WHATSAPP */}
+      <a 
+        href="https://wa.me/573003298899?text=Hola%20Juan,%20estoy%20visitando%20tu%20p%C3%A1gina%20web%20y%20estoy%20interesado%20en%20la%20plataforma%20Geniochat.%20%C2%BFMe%20puedes%20dar%20m%C3%A1s%20informaci%C3%B3n%3F"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-6 right-6 bg-[#25D366] hover:bg-[#1DA851] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-all z-[100] flex items-center justify-center group"
+      >
+        <MessageCircle size={28} />
+        {/* Tooltip opcional (se muestra al pasar el mouse) */}
+        <span className="absolute right-16 bg-white text-slate-800 text-sm font-bold px-4 py-2 rounded-lg shadow-xl opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
+          ¡Hablemos por WhatsApp!
+        </span>
+      </a>
 
     </div>
   );
