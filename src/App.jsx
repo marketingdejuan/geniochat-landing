@@ -103,7 +103,11 @@ function App() {
                 <li className="flex items-center gap-3"><CheckCircle2 className="text-emerald-500" size={20}/> Modo privacidad (Blur)</li>
                 <li className="flex items-center gap-3"><CheckCircle2 className="text-emerald-500" size={20}/> Guardado de clientes básico</li>
               </ul>
-              <button className="w-full py-3 rounded-xl font-bold text-emerald-600 bg-emerald-50 hover:bg-emerald-100 transition-colors">
+              {/* BOTÓN DEL PLAN BÁSICO (Con alerta mientras aprueban la tienda) */}
+              <button 
+                onClick={() => alert('Próximamente: El enlace de la Chrome Store estará activo en un par de días. ¡Escríbenos para darte acceso anticipado!')}
+                className="w-full py-3 rounded-xl font-bold text-emerald-600 bg-emerald-50 hover:bg-emerald-100 transition-colors"
+              >
                 Instalar Gratis
               </button>
             </div>
@@ -120,8 +124,12 @@ function App() {
                 <li className="flex items-center gap-3"><CheckCircle2 className="text-emerald-400" size={20}/> Punto de Venta y Carrito</li>
                 <li className="flex items-center gap-3"><CheckCircle2 className="text-emerald-400" size={20}/> Tablero Kanban para Despachos</li>
               </ul>
-              <button className="w-full py-3 rounded-xl font-bold text-slate-900 bg-emerald-500 hover:bg-emerald-400 transition-colors shadow-lg shadow-emerald-500/25">
-                Comenzar Prueba Gratis
+              {/* BOTÓN DIRECTO A WHATSAPP PARA PAGO POR NEQUI */}
+              <button 
+                onClick={() => window.open('https://wa.me/573003298899?text=Hola%20Juan,%20vengo%20de%20la%20p%C3%A1gina%20web.%20Quiero%20adquirir%20el%20plan%20Negocios%20Pro%20de%20Geniochat.%20%C2%BFMe%20puedes%20pasar%20tu%20Nequi%3F', '_blank')}
+                className="w-full py-3 rounded-xl font-bold text-slate-900 bg-emerald-500 hover:bg-emerald-400 transition-colors shadow-lg shadow-emerald-500/25 flex justify-center items-center gap-2"
+              >
+                Comprar por Nequi <ShoppingCart size={16} />
               </button>
             </div>
           </div>
