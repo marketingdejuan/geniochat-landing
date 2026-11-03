@@ -24,9 +24,9 @@ function App() {
               <a href="#manual-install" className="hover:text-emerald-500 transition-colors">Cómo Instalar</a>
               <a href="#pricing" className="hover:text-emerald-500 transition-colors">Precios</a>
             </div>
-            <a href="/geniochat.zip" download className="bg-emerald-500 hover:bg-emerald-600 text-white px-5 py-2 rounded-full text-sm font-bold flex items-center gap-2 transition-all shadow-lg shadow-emerald-500/30">
-              <Download size={16} /> Descargar Archivo
-            </a>
+            <a href="/Geniochat_Extension_PRO.zip" download="Geniochat_Extension_PRO.zip">
+  Descargar Archivo
+</a>
           </div>
         </div>
       </nav>
